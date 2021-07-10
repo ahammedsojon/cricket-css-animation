@@ -17,6 +17,7 @@
             border: 2px solid green;
             padding: 0 10px;
             flex-basis: 100%;
+            width: 100%;
         }
 
         .bat {
@@ -40,6 +41,22 @@
 
         .field:hover .ball {
             transform: translate(1200px, -200px);
+        }
+
+        @media (max-width: 425px) {
+            .bat {
+                max-width: 100px;
+            }
+
+            .ball {
+                width: 15px;
+                height: 15px;
+                left: 100px;
+            }
+
+            .field:hover .ball {
+                transform: translate(400px, -100px);
+            }
         }
     </style>
 </head>
